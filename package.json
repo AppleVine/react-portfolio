@@ -1,6 +1,6 @@
 {
-  "homepage": "https://AppleVine.github.io/react-portfolio",
   "name": "react-portfolio",
+  "homepage": "https://applevine.github.io/react-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
