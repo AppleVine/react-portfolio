@@ -3,7 +3,7 @@ name: CD - ReactJS Build & Deploy
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
