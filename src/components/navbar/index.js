@@ -4,6 +4,7 @@ import logo from "../../assets/images/logo.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faFile, faHome, faUser } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import resumePDF from '../../assets/documents/JakebCockburnResume.pdf';
 
 const NavBar = () => (
     <div className = 'navBar'>
@@ -37,8 +38,8 @@ const NavBar = () => (
             </li>
 
             <li>
-                <a target="_blank" href="../../assets/documents/JakebCockburnResume.pdf">
-                    <FontAwesomeIcon icon={faFile} color='#BBCDE5' />
+                <a target="_blank" rel="noopener noreferrer" href={resumePDF}>
+                    <FontAwesomeIcon icon={faFile} color="#BBCDE5" />
                 </a>
             </li>
         </ul>
