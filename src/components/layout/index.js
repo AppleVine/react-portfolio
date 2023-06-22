@@ -1,22 +1,23 @@
+import { Outlet } from 'react-router-dom';
 import NavBar from '../navbar/index';
 import './index.scss';
-import { useLocation } from 'react-router-dom';
 
 const Layout = () => {
-    const location = useLocation();
-  
-    return (
-      <div>
-        <NavBar />
-        {location.pathname !== '/' && (
-          <div className="content">
-            <h1>Page not found</h1>
-            <p>The requested page does not exist.</p>
-          </div>
-        )}
-      </div>
-    );
-  };
-  
+  return (
+    <div className="App">
+      <NavBar />
+      <div className="page">
+        <span className="tags top-tags">&lt;body&gt;</span>
 
-export default Layout;
+        <Outlet />
+        <span className="tags bottom-tags">
+          &lt;/body&gt;
+          <br />
+          <span className="bottom-tag-html">&lt;/html&gt;</span>
+        </span>
+      </div>
+    </div>
+  )
+}
+
+export default Layout
